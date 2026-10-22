@@ -1,0 +1,147 @@
+{
+  "preset": "urban",
+  "households": 356,
+  "not_enrolled_households": 2,
+  "folds": 2,
+  "repeats": 3,
+  "stage1": {
+    "perceived_cost": {
+      "survey_item": "b2_1",
+      "accuracy": 0.6039325842696629,
+      "majority_class_accuracy": 0.8707865168539326,
+      "balanced_accuracy": 0.34727200318598167,
+      "macro_f1": 0.31534781318107424,
+      "spearman_expected_score": 0.06603139122450423,
+      "answer_distribution": [
+        3,
+        0,
+        135,
+        930
+      ]
+    },
+    "perceived_distance": {
+      "survey_item": "b2_3",
+      "accuracy": 0.3848314606741573,
+      "majority_class_accuracy": 0.32303370786516855,
+      "balanced_accuracy": 0.3767244051770906,
+      "macro_f1": 0.3580739382374255,
+      "spearman_expected_score": 0.4420539954706477,
+      "answer_distribution": [
+        198,
+        270,
+        255,
+        345
+      ]
+    },
+    "perceived_safety": {
+      "survey_item": "b2_4",
+      "accuracy": 0.6676029962546817,
+      "majority_class_accuracy": 0.851123595505618,
+      "balanced_accuracy": 0.3853199273415714,
+      "macro_f1": 0.31628394746105953,
+      "spearman_expected_score": 0.2861968275201769,
+      "answer_distribution": [
+        6,
+        24,
+        129,
+        909
+      ]
+    },
+    "perceived_facilities": {
+      "survey_item": "b2_14",
+      "accuracy": 0.5383895131086143,
+      "majority_class_accuracy": 0.8202247191011236,
+      "balanced_accuracy": 0.34657211165675883,
+      "macro_f1": 0.27575750370076035,
+      "spearman_expected_score": 0.15763619120286074,
+      "answer_distribution": [
+        3,
+        30,
+        159,
+        876
+      ]
+    },
+    "stipend_helpfulness": {
+      "survey_item": "b3_1",
+      "accuracy": 0.5449438202247191,
+      "majority_class_accuracy": 0.8230337078651685,
+      "balanced_accuracy": 0.34185643148883793,
+      "macro_f1": 0.31904020629903923,
+      "spearman_expected_score": 0.13635325333969184,
+      "answer_distribution": [
+        0,
+        6,
+        183,
+        879
+      ]
+    }
+  },
+  "stage2": {
+    "full_model": {
+      "mae": 0.029477798134737537,
+      "rmse": 0.10359780797117361,
+      "r2": -0.1256311754392605,
+      "auc": 0.5287193973634652,
+      "balanced_accuracy_at_0.5": 0.5,
+      "not_enrolled_found_at_0.5": 0.0,
+      "not_enrolled_total": 2.0,
+      "mean_predicted": 0.9834656730444613,
+      "mean_actual": 0.9854868913857677
+    },
+    "without_perceptions": {
+      "mae": 0.03059624582820104,
+      "rmse": 0.11132385534166606,
+      "r2": -0.3172395607687066,
+      "auc": 0.5814500941619586,
+      "balanced_accuracy_at_0.5": 0.4981167608286252,
+      "not_enrolled_found_at_0.5": 0.0,
+      "not_enrolled_total": 2.0,
+      "mean_predicted": 0.9822131786332694,
+      "mean_actual": 0.9854868913857677
+    },
+    "xgboost_only": {
+      "mae": 0.02716464149334309,
+      "rmse": 0.11948651166966556,
+      "r2": -0.5024602280467537,
+      "auc": 0.621939736346516,
+      "balanced_accuracy_at_0.5": 0.4971751412429379,
+      "not_enrolled_found_at_0.5": 0.0,
+      "not_enrolled_total": 2.0,
+      "mean_predicted": 0.9848597284950568,
+      "mean_actual": 0.9854868913857677
+    },
+    "random_forest_only": {
+      "mae": 0.026698259195606255,
+      "rmse": 0.10422280780399962,
+      "r2": -0.13986309493027896,
+      "auc": 0.5254237288135593,
+      "balanced_accuracy_at_0.5": 0.5,
+      "not_enrolled_found_at_0.5": 0.0,
+      "not_enrolled_total": 2.0,
+      "mean_predicted": 0.9865074940520477,
+      "mean_actual": 0.9854868913857677
+    },
+    "linear_only": {
+      "mae": 0.030889243690846047,
+      "rmse": 0.10308530610573069,
+      "r2": -0.11420229247529827,
+      "auc": 0.35475517890772124,
+      "balanced_accuracy_at_0.5": 0.5,
+      "not_enrolled_found_at_0.5": 0.0,
+      "not_enrolled_total": 2.0,
+      "mean_predicted": 0.9817959787236804,
+      "mean_actual": 0.9854868913857677
+    },
+    "mean_baseline": {
+      "mae": 0.02845109343657511,
+      "rmse": 0.09823543220500176,
+      "r2": -0.011277245687774254,
+      "auc": 0.5,
+      "balanced_accuracy_at_0.5": 0.5,
+      "not_enrolled_found_at_0.5": 0.0,
+      "not_enrolled_total": 2.0,
+      "mean_predicted": 0.9854868913857677,
+      "mean_actual": 0.9854868913857677
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "attending_children_by_distance_code_sc1q18": {
+    "1": 0.762,
+    "2": 0.197,
+    "3": 0.032,
+    "4": 0.006,
+    "5": 0.002,
+    "6": 0.001,
+    "7": 0.0
+  },
+  "lahore_households_with_school_age_children": 3524,
+  "dropped_income_unmeasured_or_missing": 12,
+  "dropped_no_identified_head": 0,
+  "households_used": 3512,
+  "school_age_children": 7929,
+  "child_attendance_rate": 0.838,
+  "households_enrolled_share_ge_0.5": 0.886,
+  "income_quintile_cutpoints": [
+    20000,
+    28000,
+    39217,
+    58467
+  ]
+}

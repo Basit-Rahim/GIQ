@@ -1,0 +1,110 @@
+{
+  "model": "urban",
+  "held_values": {
+    "travel_mode": 0,
+    "school_facilities": 3.58,
+    "route_safe": "50% unsafe (expected value)",
+    "min_distance": 0.1,
+    "max_distance": 1.0,
+    "min_time": 7.5,
+    "max_time": 10.0
+  },
+  "metrics": {
+    "mae": 0.22132568863885235,
+    "rmse": 0.31332178737718536,
+    "r2": 0.015254863514405415,
+    "auc": 0.6703720448156368,
+    "balanced_accuracy_at_0.5": 0.5,
+    "not_enrolled_found_at_0.5": 0,
+    "not_enrolled_total": 401,
+    "mean_predicted": 0.8679641388242184,
+    "mean_actual": 0.8442146098965575,
+    "flagged_at_0.5": 0,
+    "share_of_flagged_not_enrolled": null,
+    "share_not_enrolled_overall": 0.11417995444191344,
+    "accuracy_at_0.5": 0.8858200455580866,
+    "accuracy_if_everyone_called_enrolled": 0.8858200455580866,
+    "children_enrolled_rate_actual": 0.8379366881069492,
+    "children_enrolled_rate_predicted": 0.8667297367287891,
+    "children_enrolled_rate_predicted_all_routes_safe": 0.9660490081787692,
+    "children_enrolled_rate_predicted_all_routes_unsafe": 0.767410465278809
+  },
+  "by_income_quintile": {
+    "Q1": {
+      "households": 703,
+      "actual": 0.807,
+      "model": 0.857
+    },
+    "Q2": {
+      "households": 702,
+      "actual": 0.81,
+      "model": 0.862
+    },
+    "Q3": {
+      "households": 702,
+      "actual": 0.848,
+      "model": 0.869
+    },
+    "Q4": {
+      "households": 702,
+      "actual": 0.861,
+      "model": 0.874
+    },
+    "Q5": {
+      "households": 703,
+      "actual": 0.895,
+      "model": 0.877
+    }
+  },
+  "by_head_literacy": {
+    "can read/write": {
+      "households": 2453,
+      "actual": 0.891,
+      "model": 0.88
+    },
+    "cannot read/write": {
+      "households": 1059,
+      "actual": 0.735,
+      "model": 0.84
+    }
+  },
+  "by_head_numeracy": {
+    "can do sums": {
+      "households": 3092,
+      "actual": 0.858,
+      "model": 0.877
+    },
+    "cannot do sums": {
+      "households": 420,
+      "actual": 0.743,
+      "model": 0.803
+    }
+  },
+  "by_predicted_band_low_to_high": {
+    "band 1": {
+      "households": 703,
+      "actual": 0.726,
+      "model": 0.826
+    },
+    "band 2": {
+      "households": 702,
+      "actual": 0.813,
+      "model": 0.87
+    },
+    "band 3": {
+      "households": 702,
+      "actual": 0.861,
+      "model": 0.877
+    },
+    "band 4": {
+      "households": 702,
+      "actual": 0.924,
+      "model": 0.882
+    },
+    "band 5": {
+      "households": 703,
+      "actual": 0.897,
+      "model": 0.885
+    }
+  }
+}
